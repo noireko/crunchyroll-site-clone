@@ -15,16 +15,29 @@ header {
 }
 
 .menu-hamb {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 23px;
+    margin: 21px;
+    height: 14px;
 }
 
 .menu-hamb span {
-    background-color: #a9bec1;;
+    background-color: #ffffff;
     width: 17px;
     height: 2px;
+}
+
+.vis-cel {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+.vis-cel.active{
+    background-color: #151515;
 }
 
 .div-logos{
@@ -49,7 +62,11 @@ header {
 
 }
 
-nav ul {
+.nav {
+    display: none;
+}
+
+.nav.active {
    display: flex;
    list-style: none;
    padding: 10px 0 0 5px;
@@ -59,14 +76,13 @@ nav ul {
     left: 0;
     width: 100vw;
     height: calc(100vh - 60px);
-    background: rgba(0, 0, 0, 0.9);
+    background: #151515;
     z-index: 999;
-    color: #999896;
+    color: #ffffff;
 }
 
-nav ul li {
+nav a {
     font-size: 16px;
     margin: 15px;
 }
-
 
