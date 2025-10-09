@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <main>
         <header>
             <section class="seccion-logo">
-                <div class="menu-hamb">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="vis-cel" id="vis-cel">
+                    <div class="menu-hamb" id="hamb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="div-logos">
                     <img class="logo-desk" src="img/crunchy-logo.png">
                     <img class="logo-cel" src="img/logo-cell.png">
                 </div>
-                <nav>
-                    <ul>
-                        <li>Novedades</li>
-                        <li>Popular</li>
-                        <li>Simulcast</li>
-                        <li>Categorías</li>
-                        <li>Juegos</li>
-                        <li>Noticias</li>
-                    </ul>
+                <nav class="nav" id="nav">
+                    <a>Novedades</a>
+                    <a>Popular</a>
+                    <a>Simulcast</a>
+                    <a>Categorías</a>
+                    <a>Juegos</a>
+                    <a>Noticias</a>
                 </nav>
             </section>
             <section class="seccion-perfil">
-                <div>
-                    <img>
+                <div class="icono-lupa">
+                    <svg class="header-svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        data-t="search-svg" aria-hidden="true" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.5 19C12.4879 19 14.3164 18.3176 15.7641 17.1742L21.2927 22.7069L22.7074 21.2931L17.1778 15.7595C18.319 14.3126 19 12.4858 19 10.5C19 5.80558 15.1944 2 10.5 2C5.80558 2 2 5.80558 2 10.5C2 15.1944 5.80558 19 10.5 19ZM10.5 17C14.0899 17 17 14.0899 17 10.5C17 6.91015 14.0899 4 10.5 4C6.91015 4 4 6.91015 4 10.5C4 14.0899 6.91015 17 10.5 17Z">
+                        </path>
+                    </svg>
                 </div>
-                <div>
-                    <img>
-                </div>
-                <div>
-                    <img>
-                    <div></div>
-                </div>
+                <section class="seccion-foto-perfil">
+                    <div class="seccion-foto">
+                        <img class="foto-perfil" src="img/eren-avatar.png">
+                    </div>
+                    <div class="icono-flecha">
+                        <svg class="header-svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            data-t="dropdown-svg" aria-hidden="true" role="img">
+                            <path d="M7 10h10l-5 5z"></path>
+                        </svg>
+                    </div>
+                </section>
             </section>
         </header>
+
         <body>
             <section>
                 <div>
@@ -85,6 +97,7 @@
             </section>
         </body>
     </main>
-    <script href="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
