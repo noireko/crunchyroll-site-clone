@@ -10,7 +10,7 @@
 header {
     background-color: #272727;
     height: 100%;
-    display:flex;
+    display: flex;
     height: 3.75rem;
     justify-content: space-between;
     align-items: center;
@@ -38,13 +38,13 @@ header {
     width: 60px;
 }
 
-.vis-cel.active{
+.vis-cel.active {
     background-color: #151515;
 }
 
-.div-logos{
+.div-logos {
     height: 3.75rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -56,11 +56,11 @@ header {
 }
 
 .logo-desk {
-    display:none;
+    display: none;
 }
 
 .seccion-logo {
-    display:flex;
+    display: flex;
 
 }
 
@@ -69,9 +69,9 @@ header {
 }
 
 .nav.active {
-   display: flex;
-   list-style: none;
-   padding: 10px 0 0 5px;
+    display: flex;
+    list-style: none;
+    padding: 10px 0 0 5px;
     flex-direction: column;
     position: fixed;
     top: 60px;
@@ -89,27 +89,27 @@ nav a {
 }
 
 svg {
-     width: 1.5rem;
-  height: 1.5rem;
-  fill: rgb(187, 187, 187);
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgb(187, 187, 187);
 }
 
 .icono-lupa {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 13px
 }
 
 .seccion-perfil {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 .seccion-foto {
     height: 36px;
     width: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -121,8 +121,8 @@ svg {
 }
 
 .seccion-foto-perfil {
-    height:60px;
-    display:flex;
+    height: 60px;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 13px
@@ -131,4 +131,77 @@ svg {
 .icono-flecha {
     margin-left: 6px
 }
+
+.seccion-foto-grande {
+    width: 100%;
+    height: 53vh;
+    overflow: hidden;
+}
+
+.seccion-foto-grande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 93% 40%;
+    transition: object-position 0.3s ease;
+}
+
+.barritas {
+    display: flex;
+    flex-direction: row;
+}
+
+.barritas span {
+    background-color: #a0a0a0;
+    height: 5px;
+    width: 10px;
+}
+
+.seccion-cuerpo {
+    background-color: #000000;
+    height: 1200px;
+}
+
+.descripcion {
+    display: none
+}
+
+.seccion-info {
+    background-color:#000000;
+    color: gray;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-logo-anime img{
+    height: 70px;
+}
+
+.seccion-grade {
+    margin: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-grade svg{
+    height: 1.25rem;
+    width: auto;
+}
+
+.seccion-grade span::before {
+    background-color: #a0a0a0;
+    content: "";
+    display: inline-block;
+    height: .25rem;
+    inset-block-start: 50%;
+    line-height: 1;
+    margin-inline-end: .25rem;
+    margin-inline-start: .25rem;
+    transform: translateY(-90%) rotate(45deg);
+    width: .25rem;
+}
+
+
 
