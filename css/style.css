@@ -134,9 +134,13 @@ svg {
 
 .seccion-anime {
     position: relative;
-    /* referencia para .info */
     display: inline-block;
-    height: 53vh;
+    height: 100%;
+}
+
+.seccion-anime-todo {
+    
+    height: 57vh;
 }
 
 
@@ -150,24 +154,17 @@ svg {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 93% 40%;
+    object-position: 93% 10%;
     transition: object-position 0.3s ease;
+    background: #272727;
 }
 
-.barritas {
-    display: flex;
-    flex-direction: row;
-}
 
-.barritas span {
-    background-color: #a0a0a0;
-    height: 5px;
-    width: 10px;
-}
 
 .seccion-cuerpo {
     background-color: #000000;
-    height: 1200px;
+    height: 100%;
+    padding-top: 3.5rem;
 }
 
 .descripcion {
@@ -189,18 +186,18 @@ svg {
 
 .seccion-info {
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 8));
 }
 
 .seccion-logo-anime img {
-    height: 70px;
+    height: 60px;
 }
 
 .seccion-grade {
-    margin: 15px 0;
+    margin-block: .75rem 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,6 +206,11 @@ svg {
 .seccion-grade svg {
     height: 1.25rem;
     width: auto;
+}
+
+.seccion-grade span {
+    font-size: .875rem;
+    color: #8c8c8c;
 }
 
 .seccion-grade span::before {
@@ -222,6 +224,63 @@ svg {
     margin-inline-start: .25rem;
     transform: translateY(-90%) rotate(45deg);
     width: .25rem;
+}
+
+.seccion-boton {
+    display:flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.seccion-boton a {
+    padding: 8px 65px;
+    background-color: #ff630c;
+    color: #000000;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    gap: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-boton a svg{
+    fill:#000000;
+}
+
+.boton-bookmark{
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff630c;
+    background-color: transparent;
+}
+
+.boton-bookmark svg{
+    fill: #ff630c;
+}
+
+.barritas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.barritas span {
+    background-color: #a0a0a0;
+    height: 7px;
+    width: 25px;
+    margin: 0 5px;
+    border-radius: 5px
+}
+
+.carru-titu {
+    color: white;
+    font-weight: 700;
+    font-size: 1.375rem;
 }
 
 
