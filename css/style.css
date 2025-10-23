@@ -9,6 +9,25 @@ body {
     background-color: #000000;
 }
 
+h2 {
+  color: var(--h1-color);
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+  padding-bottom: var(--h1-padding-bottom);
+  line-height: var(--h1-line-height);
+}
+
+/* ROOT */
+
+:root {
+  --h1-color: #ffffff;
+  --h1-font-weight: 700;
+  --h1-font-size: 1.375rem;
+  --h1-padding-bottom: 12px;
+  --h1-line-height: 1.75rem;
+}
+
+
 /* HEADER */
 
 header {
@@ -283,13 +302,7 @@ svg {
     border-radius: 5px
 }
 
-.carru-titu {
-    color: white;
-    font-weight: 700;
-    font-size: 1.375rem;
-    padding-bottom: 12px;
-    line-height: 1.75rem;
-}
+/* CARRUSEL */
 
 .carrusel-animes {
     display:flex;
@@ -324,4 +337,20 @@ svg {
 .imagen-anime-carru {
     height: 255px;
     width: auto;
+}
+
+/* WATCH LATER */
+
+
+.contenedor-thumbnail{
+    width: 150px;
+    height: auto;
+}
+
+.contenedor-thumbnail img{
+    width: 100%;
+}
+
+.sv-1 {
+    display:flex;
 }
