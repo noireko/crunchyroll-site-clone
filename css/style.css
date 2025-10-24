@@ -10,21 +10,21 @@ body {
 }
 
 h2 {
-  color: var(--h1-color);
-  font-weight: var(--h1-font-weight);
-  font-size: var(--h1-font-size);
-  padding-bottom: var(--h1-padding-bottom);
-  line-height: var(--h1-line-height);
+    color: var(--color);
+    font-weight: var(--h1-font-weight);
+    font-size: var(--h1-font-size);
+    padding-bottom: var(--h1-padding-bottom);
+    line-height: var(--h1-line-height);
 }
 
 /* ROOT */
 
 :root {
-  --h1-color: #ffffff;
-  --h1-font-weight: 700;
-  --h1-font-size: 1.375rem;
-  --h1-padding-bottom: 12px;
-  --h1-line-height: 1.75rem;
+    --color: #ffffff;
+    --h1-font-weight: 700;
+    --h1-font-size: 1.375rem;
+    --h1-padding-bottom: 12px;
+    --h1-line-height: 1.75rem;
 }
 
 
@@ -164,7 +164,7 @@ svg {
 }
 
 .seccion-anime-todo {
-    margin-bottom: 40px;
+    margin-bottom: 56px;
     height: 57vh;
 }
 
@@ -182,14 +182,6 @@ svg {
     object-position: 93% 10%;
     transition: object-position 0.3s ease;
     background: #272727;
-}
-
-
-
-.seccion-cuerpo {
-    background-color: #000000;
-    height: 100%;
-    padding-top: 3.5rem;
 }
 
 .descripcion {
@@ -252,7 +244,7 @@ svg {
 }
 
 .seccion-boton {
-    display:flex;
+    display: flex;
     justify-content: center;
     gap: 10px
 }
@@ -266,25 +258,25 @@ svg {
     font-weight: bold;
     font-family: Lato, Helvetica Neue, helvetica, sans-serif;
     gap: 5px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.seccion-boton a svg{
-    fill:#000000;
+.seccion-boton a svg {
+    fill: #000000;
 }
 
-.boton-bookmark{
+.boton-bookmark {
     padding: 5px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid #ff630c;
     background-color: transparent;
 }
 
-.boton-bookmark svg{
+.boton-bookmark svg {
     fill: #ff630c;
 }
 
@@ -305,18 +297,20 @@ svg {
 /* CARRUSEL */
 
 .carrusel-animes {
-    display:flex;
+    display: flex;
     gap: 10px;
 }
 
 .seccion-cuerpo {
-    padding: 20px;
+    padding: 0 20px;
+    background-color: #000000;
+    height: 100%;
 }
 
 
 .seccion-cuerpo h3,
-.seccion-cuerpo span {
-    
+.seccion-carrusel-animes span {
+
     font-size: .875rem;
     line-height: 1.125rem;
     font-weight: 500;
@@ -326,7 +320,7 @@ svg {
     margin: 8px 0 12px;
 }
 
-.seccion-cuerpo span {
+.seccion-carrusel-animes span {
     color: #8c8c8c;
 }
 
@@ -341,16 +335,63 @@ svg {
 
 /* WATCH LATER */
 
+.seguir-viendo {
+    margin-top: 56px;
+}
 
-.contenedor-thumbnail{
+.contenedor-titulo-sv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-titulo-sv a {
+    padding-top: 3px
+}
+
+.contenedor-titulo-sv a svg {
+
+    fill: rgb(255, 255, 255);
+}
+
+.contenedor-thumbnail {
     width: 150px;
     height: auto;
 }
 
-.contenedor-thumbnail img{
+.contenedor-thumbnail img {
     width: 100%;
+    display: block;
 }
 
 .sv-1 {
-    display:flex;
+    display: flex;
+}
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+
+.longitud-vid {
+    color: #ffffff;
+    position: absolute;
+    inset-block-end: 2rem;
+    inset-inline-end: .25rem;
+    background-color: #000000a4;
+    padding: 3px 5px;
+    font-size: .875rem;
+}
+
+.longitud-vid span {
+    color: #ffffff
+}
+
+.play-button svg{
+    position: absolute;
+  top: 50%;   
+  left: 50%;       
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
 }
