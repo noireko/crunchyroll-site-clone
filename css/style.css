@@ -73,9 +73,8 @@ header {
 }
 
 .logo-cel {
-    margin-left: 10px;
-    height: 35px;
-    width: auto;
+    margin-left: 20px;
+    fill: #ff640a;
 }
 
 .logo-desk {
@@ -130,7 +129,7 @@ svg {
 }
 
 .seccion-foto {
-    height: 36px;
+    height: 34px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -434,6 +433,9 @@ svg {
 .titulo-anime-sv {
     font-size: .625rem;
     padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
@@ -451,4 +453,17 @@ svg {
 
 .sv-1 {
     margin-bottom: .75rem;
+}
+
+/* MOVIE */
+
+.seccion-peli {
+    width: 100%;
+    height: auto;
+    margin: 2.5rem 0;
+}
+
+.seccion-peli img {
+    height: auto;
+    width: 100%;
 }
