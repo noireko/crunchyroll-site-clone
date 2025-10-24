@@ -308,7 +308,7 @@ svg {
 }
 
 
-.seccion-cuerpo h3,
+.seccion-carrusel-animes h3,
 .seccion-carrusel-animes span {
 
     font-size: .875rem;
@@ -316,7 +316,7 @@ svg {
     font-weight: 500;
 }
 
-.seccion-cuerpo h3 {
+.seccion-carrusel-animes h3 {
     margin: 8px 0 12px;
 }
 
@@ -344,9 +344,7 @@ svg {
     justify-content: space-between;
 }
 
-.contenedor-titulo-sv a {
-    padding-top: 3px
-}
+
 
 .contenedor-titulo-sv a svg {
 
@@ -376,7 +374,7 @@ svg {
 .longitud-vid {
     color: #ffffff;
     position: absolute;
-    inset-block-end: 2rem;
+    inset-block-end: .25rem;
     inset-inline-end: .25rem;
     background-color: #000000a4;
     padding: 3px 5px;
@@ -387,11 +385,70 @@ svg {
     color: #ffffff
 }
 
-.play-button svg{
+.play-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #00000070;
     position: absolute;
-  top: 50%;   
-  left: 50%;       
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button svg {
+    height: 35px;
+    width: auto;
+    color: #ffffff;
+}
+
+.info-sv {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    min-height: 4.3125rem;
+    min-width: 0;
+    padding-block: .75rem .25rem;
+    padding-inline-start: .75rem;
+
+}
+
+.info-sv span {
+    color: #8c8c8c;
+}
+
+.nombre-anime-sv {
+    color: #ffffff;
+    font-size: .875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.titulo-anime-sv {
+    font-size: .625rem;
+    padding-bottom: 10px;
+    
+}
+
+.sub-sv {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.cont-sub-sv {
+    padding-top: 6px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sv-1 {
+    margin-bottom: .75rem;
 }
