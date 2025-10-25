@@ -362,8 +362,6 @@ svg {
     justify-content: space-between;
 }
 
-
-
 .contenedor-titulo-sv a svg {
 
     fill: rgb(255, 255, 255);
@@ -487,7 +485,7 @@ svg {
     width: 100%;
 }
 
-/* GENRE 1 SECTION */
+/* GENRE SECTION */
 
 .seccion-demi-titu {
     padding-bottom: 12px;
@@ -507,4 +505,91 @@ svg {
     gap: 4.9rem;
     display: flex;
     flex-direction: column;
+}
+
+/* NEW EPISODES */
+
+.seccion-nuevos-ep {
+    margin-top: 2.5rem
+}
+
+.seccion-titu-newep h2 {
+    display:flex;
+    align-items: center;
+}
+
+.seccion-titu-newep {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.flecha-newep {
+    margin-bottom: 6px;
+}
+
+.seccion-titu-newep h2 svg {
+    height: 1.5rem;
+    margin-block-start: .125rem;
+    margin-inline-end: .25rem;
+    width: 1.5rem;
+    align-self: flex-start;
+    fill: var(--color)
+}
+
+.div-hoy h3 {
+    color: var(--color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.seccion-animes-nuevos {
+    display:flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.new-ep {
+    display:flex;
+}
+
+.thumbnail-newep {
+    width: 150px;
+    height: auto;
+}
+
+.thumbnail-newep img {
+    width: 100%;
+    display: block;
+}
+
+.nombre-anime-newep {
+    color: var(--color);
+    font-size: .875rem;
+}
+
+.info-newep {
+    margin-left: 12px;
+    display:flex;
+    flex-direction: column;
+}
+
+.info-newep span {
+    color:#8c8c8c;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.episode-newep {
+    margin: 7px 0;
+}
+
+.div-tl {
+    display:flex;
+    justify-content: space-between;
+}
+
+.div-tl .timelapse {
+    color: #2abdbb;
 }
