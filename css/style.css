@@ -514,14 +514,14 @@ svg {
 }
 
 .seccion-titu-newep h2 {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 .seccion-titu-newep {
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .flecha-newep {
@@ -541,17 +541,21 @@ svg {
     color: var(--color);
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #414141;
+    ;
 }
 
 .seccion-animes-nuevos {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1.75rem;
+
+    padding-top: 12px;
 }
 
 .new-ep {
-    display:flex;
+    display: flex;
 }
 
 .thumbnail-newep {
@@ -571,12 +575,12 @@ svg {
 
 .info-newep {
     margin-left: 12px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 .info-newep span {
-    color:#8c8c8c;
+    color: #8c8c8c;
     font-size: .875rem;
     font-weight: 500;
 }
@@ -586,10 +590,34 @@ svg {
 }
 
 .div-tl {
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .div-tl .timelapse {
     color: #2abdbb;
+}
+
+.seccion-btn-newep {
+    background-color: #213944;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    height: 2.5rem;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.btn-newep {
+    align-items: center;
+    cursor: inherit;
+    display: flex;
+    gap: .25rem;
+    height: 100%;
+    justify-content: center;
+    transition: none;
+    font-weight: 900;
+    font-size: .875rem;
+    line-height: 1.125rem;
 }
