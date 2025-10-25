@@ -17,6 +17,22 @@ h2 {
     line-height: var(--h1-line-height);
 }
 
+
+.carrusel-animes h3,
+.carrusel-animes span {
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+}
+
+.carrusel-animes span {
+    color:#8c8c8c;
+}
+
+.carrusel-animes h3 {
+    margin: 8px 0 12px;
+}
+
 /* ROOT */
 
 :root {
@@ -306,19 +322,6 @@ svg {
     height: 100%;
 }
 
-
-.seccion-carrusel-animes h3,
-.seccion-carrusel-animes span {
-
-    font-size: .875rem;
-    line-height: 1.125rem;
-    font-weight: 500;
-}
-
-.seccion-carrusel-animes h3 {
-    margin: 8px 0 12px;
-}
-
 .seccion-carrusel-animes span {
     color: #8c8c8c;
 }
@@ -466,4 +469,26 @@ svg {
 .seccion-peli img {
     height: auto;
     width: 100%;
+}
+
+/* GENRE 1 SECTION */
+
+.seccion--titu {
+    padding-bottom: 12px;
+}
+
+.seccion-demi-titu span {
+    color:#8c8c8c;
+    font-size: 0.875rem;
+}
+
+.seccion-demi-titu h2 {
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.seccion-generos {
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
 }
