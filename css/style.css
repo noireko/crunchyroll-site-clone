@@ -5,9 +5,12 @@
     font-family: Lato, Helvetica Neue, helvetica, sans-serif;
 }
 
-body {
+main {
+    margin-top: 60px;
     background-color: #000000;
 }
+
+
 
 h2 {
     color: var(--color);
@@ -26,7 +29,7 @@ h2 {
 }
 
 .carrusel-animes span {
-    color:#8c8c8c;
+    color: #8c8c8c;
 }
 
 .carrusel-animes h3 {
@@ -47,25 +50,37 @@ h2 {
 /* HEADER */
 
 header {
-    background-color: #272727;
-    height: 100%;
-    display: flex;
+    position: absolute;
+    min-width: 20rem;
+    display: block;
+    top: 0;
+    left: 0;
+
+}
+
+.seccion-header {
+    position: fixed;
+    inset-inline: 0;
     height: 3.75rem;
-    justify-content: space-between;
-    align-items: center;
+    min-width: 20rem;
+    background-color: #272727;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "mobileMenu logo actions";
 }
 
 .menu-hamb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 21px;
+    margin: 22px;
     height: 14px;
 }
 
 .menu-hamb span {
-    background-color: #ffffff;
-    width: 17px;
+    background-color: rgb(187, 187, 187);
+    width: 16px;
     height: 2px;
 }
 
@@ -89,7 +104,7 @@ header {
 }
 
 .logo-cel {
-    margin-left: 20px;
+    margin-left: 18px;
     fill: #ff640a;
 }
 
@@ -136,12 +151,12 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 13px
+    padding: 0 18px
 }
 
 .seccion-perfil {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 .seccion-foto {
@@ -167,7 +182,8 @@ svg {
 }
 
 .icono-flecha {
-    margin-left: 6px
+    margin-left: 6px;
+    padding-top: 3px
 }
 
 /* CUERPO */
@@ -439,7 +455,7 @@ svg {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
 }
 
 .sub-sv {
@@ -449,7 +465,7 @@ svg {
 
 .cont-sub-sv {
     padding-top: 6px;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -473,12 +489,12 @@ svg {
 
 /* GENRE 1 SECTION */
 
-.seccion--titu {
+.seccion-demi-titu {
     padding-bottom: 12px;
 }
 
 .seccion-demi-titu span {
-    color:#8c8c8c;
+    color: #8c8c8c;
     font-size: 0.875rem;
 }
 
@@ -488,7 +504,7 @@ svg {
 }
 
 .seccion-generos {
-    gap: 5rem;
+    gap: 4.9rem;
     display: flex;
     flex-direction: column;
 }
