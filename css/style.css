@@ -831,7 +831,7 @@ svg {
 }
 
 .music-info {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 14px 0;
@@ -857,7 +857,7 @@ svg {
 }
 
 .music-info small {
-    
+
     font-size: .625rem;
     font-weight: 900;
 }
@@ -873,7 +873,7 @@ svg {
 /* GATO NEGRO */
 
 .seccion-gato {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -881,11 +881,11 @@ svg {
 }
 
 .seccion-gato h2 {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-align-items: center;
-line-height: 1.625rem;
+    align-items: center;
+    line-height: 1.625rem;
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 16px;
@@ -894,7 +894,7 @@ line-height: 1.625rem;
 .seccion-gato button {
     height: 2.5rem;
     width: 100%;
-    border-color:#ff630c;
+    border-color: #ff630c;
     color: #ff630c;
     background-color: transparent;
     display: flex;
@@ -906,4 +906,70 @@ line-height: 1.625rem;
     line-height: 1.125rem;
     font-weight: 700;
     margin-top: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 4.5rem;
+}
+
+.footer-1 {
+    color: #8c8c8c;
+    fill: #8c8c8c;
+    display:flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 0 5px;
+}
+
+.footer-1 div{
+    
+    max-width: 90%;
+}
+
+.logo-footer svg {
+    width: 13.5rem;
+    height: auto;
+    fill: var(--color);
+}
+
+.derechos-footer {
+    display: flex;
+    align-items: center;
+}
+
+.derechos-footer div {
+    line-height: 1.125rem;
+    font-size: .875rem;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #8c8c8c;
+}
+
+.derechos-footer svg {
+    width: 10rem;
+    height: auto;
+}
+
+.footer-1 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 24px;
+    padding: 10px 0;
+}
+
+.footer-1 p {
+    line-height: 1.125rem;
+    font-size: .875rem;
+}
+
+.idioma-footer {
+    border: 2px solid #8c8c8c;
+    display: flex;
+    align-items: center;
+    padding: 10px 8px 10px 12px;
+    gap: .5rem
 }
