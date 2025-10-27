@@ -780,6 +780,7 @@ svg {
     display:flex;
     flex-direction: column;
     margin-top: 70px;
+    margin-bottom: 2.5rem;
 }
 
 .contenedor-thumbnail-pv img {
