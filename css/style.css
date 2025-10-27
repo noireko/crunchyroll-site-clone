@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* GENERAL */ 
+/* GENERAL */
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -639,18 +639,18 @@ svg {
 /* NOTICIAS */
 
 .seccion-titu-noti .flecha {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .seccion-noticias {
     margin-top: 2.5rem;
     background-image: linear-gradient(180deg, #2abdbb, #2d9594);
-    padding: 10px;
+    padding: 12px 10px;
 }
 
 .contededor-notis {
     background-color: #000000;
-    padding:10px;
+    padding: 10px;
 }
 
 .seccion-titu-noti h2 {
@@ -675,6 +675,9 @@ svg {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #272727
 }
 
 .contenedor-noti-1 {
@@ -696,12 +699,65 @@ svg {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 8px
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contenedor-noti-1 span {
     line-height: 1rem;
     font-size: .75rem;
     font-weight: 600;
-    color:#8c8c8c
+    color: #8c8c8c;
+}
+
+.noti-reciente {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contenedor-titu-mr h3 {
+    color: var(--color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+
+.contenedor-thumbnail-mr img {
+
+    width: 105px;
+    height: auto;
+}
+
+.contenedor-noti-info h3 {
+    color: var(--color);
+    font-size: .875rem;
+    font-weight: 500;
+    -webkit-line-clamp: var(--max-lines);
+    -webkit-box-orient: vertical;
+    --max-lines: 2;
+    display: -webkit-box;
+    margin-block-end: .25rem;
+    overflow: hidden;
+    white-space: unset;
+    flex-wrap: nowrap;
+}
+
+.contenedor-noti-info span {
+
+    color: #8c8c8c;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.contenedor-noti-info {
+    min-width: 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
