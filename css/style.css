@@ -869,3 +869,40 @@ svg {
 .seccion-music-video {
     margin-bottom: 2.5rem
 }
+
+/* GATO NEGRO */
+
+.seccion-gato {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.9rem;
+}
+
+.seccion-gato h2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+line-height: 1.625rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.seccion-gato button {
+    height: 2.5rem;
+    width: 100%;
+    border-color:#ff630c;
+    color: #ff630c;
+    background-color: transparent;
+    display: flex;
+    gap: .25rem;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
