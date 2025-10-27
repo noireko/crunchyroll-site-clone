@@ -911,12 +911,19 @@ svg {
 /* FOOTER */
 
 footer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 4.5rem;
     gap: 2rem;
 
 }
+
+
+footer .footer-1,
+footer .container-secciones {
+    padding: 0 25px;
+}
+
 
 .footer-1 {
     color: #8c8c8c;
@@ -980,13 +987,13 @@ footer {
 
 .container-secciones {
     gap: 2rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 10px
 }
 
 .container-secciones ul {
-    color:#8c8c8c;
+    color: #8c8c8c;
     gap: 2rem;
     padding: 0 5px;
     list-style: none;
@@ -1001,4 +1008,34 @@ footer {
 .container-secciones h2 {
     line-height: 1.5rem;
     font-size: 1rem;
+}
+
+.seccion-info-final {
+    isolation: isolate;
+    position: relative;
+    padding: 0 24px;
+}
+
+.seccion-info-final img {
+    height: 100%;
+    inset-inline-start: 0;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.seccion-info-final ul {
+    color:#8c8c8c;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px 0;
+    list-style: none;
+}
+
+.seccion-info-final li {
+    padding: 14px 12px;
+    line-height: 1.125rem;
+    font-size: .875rem;
 }
