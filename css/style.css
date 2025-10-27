@@ -6,10 +6,11 @@
 
 /* GENERAL */
 
+
 body {
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    font-family: "Lato", Helvetica Neue, helvetica, sans-serif;
     list-style: none;
 }
 
@@ -251,6 +252,7 @@ svg {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 20px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 8));
 }
 
@@ -291,21 +293,29 @@ svg {
 .seccion-boton {
     display: flex;
     justify-content: center;
-    gap: 10px
+    gap: 10px;
+    width: 100%;
 }
 
-.seccion-boton a {
-    padding: 8px 65px;
+.boton-mirar a {
     background-color: #ff630c;
     color: #000000;
     font-size: .875rem;
     line-height: 1.125rem;
-    font-weight: bold;
-    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    font-weight: 900;
     gap: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.boton-mirar {
+    width: 87.5%
+}
+
+.seccion-boton a {
+    height: 2.5rem;
+    width: 100%
 }
 
 .seccion-boton a svg {
@@ -313,7 +323,8 @@ svg {
 }
 
 .boton-bookmark {
-    padding: 5px;
+    
+    width: 11.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -760,4 +771,11 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+/* ANIMES TO WATCH */
+
+.contenedor-thumbnail-pv img {
+    width: 100%;
+    height: auto
 }
