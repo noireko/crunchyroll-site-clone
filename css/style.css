@@ -313,7 +313,7 @@ svg {
     width: 87.5%
 }
 
-.seccion-boton a {
+.boton-mirar a {
     height: 2.5rem;
     width: 100%
 }
@@ -775,7 +775,48 @@ svg {
 
 /* ANIMES TO WATCH */
 
+.seccion-animes-pv {
+    gap: 2.5rem;
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
 .contenedor-thumbnail-pv img {
     width: 100%;
-    height: auto
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.parrafo-pv {
+        font-size: .875rem;
+    color: var(--color);
+    -webkit-line-clamp: var(--max-lines);
+    -webkit-box-orient: vertical;
+    --max-lines: 3;
+    display: -webkit-box;
+    margin-block-end: .75rem;
+    overflow: hidden;
+    white-space: unset;
+    margin-top: 8px;
+}
+
+.doblaje-pv span{
+    color:#8c8c8c;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+}
+
+.doblaje-pv svg{
+    fill: var(--color);
+}
+
+.btn-pv div{
+    width: 100%;
+}
+
+.btn-pv svg {
+    fill:#000000
 }
