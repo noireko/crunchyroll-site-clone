@@ -515,7 +515,7 @@ svg {
 }
 
 .seccion-generos {
-    gap: 4.9rem;
+    gap: 2.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -523,7 +523,7 @@ svg {
 /* NEW EPISODES */
 
 .seccion-nuevos-ep {
-    margin-top: 2.5rem
+    margin-top: 4.9rem
 }
 
 .seccion-titu-newep h2 {
