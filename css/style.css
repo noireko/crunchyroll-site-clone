@@ -714,6 +714,7 @@ svg {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -749,6 +750,7 @@ svg {
     font-size: .875rem;
     font-weight: 500;
     -webkit-line-clamp: var(--max-lines);
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     --max-lines: 2;
     display: -webkit-box;
@@ -794,6 +796,8 @@ svg {
     color: var(--color);
     -webkit-line-clamp: var(--max-lines);
     -webkit-box-orient: vertical;
+
+    line-clamp: 3;
     --max-lines: 3;
     display: -webkit-box;
     margin-block-end: .75rem;
@@ -841,6 +845,7 @@ svg {
 .music-info h3 {
     color: var(--color);
     -webkit-line-clamp: var(--max-lines);
+    line-clamp: 1;
     -webkit-box-orient: vertical;
     --max-lines: 1;
     display: -webkit-box;
@@ -1026,8 +1031,8 @@ footer .container-secciones {
 }
 
 .seccion-info-final ul {
-    color:#8c8c8c;
-    display:flex;
+    color: #8c8c8c;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 1.5rem 0;
