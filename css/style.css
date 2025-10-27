@@ -911,21 +911,25 @@ svg {
 /* FOOTER */
 
 footer {
+    display:flex;
+    flex-direction: column;
     margin-top: 4.5rem;
+    gap: 2rem;
+
 }
 
 .footer-1 {
     color: #8c8c8c;
     fill: #8c8c8c;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1.25rem;
     align-items: flex-start;
     padding: 0 5px;
 }
 
-.footer-1 div{
-    
+.footer-1 div {
+
     max-width: 90%;
 }
 
@@ -972,4 +976,29 @@ footer {
     align-items: center;
     padding: 10px 8px 10px 12px;
     gap: .5rem
+}
+
+.container-secciones {
+    gap: 2rem;
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px
+}
+
+.container-secciones ul {
+    color:#8c8c8c;
+    gap: 2rem;
+    padding: 0 5px;
+    list-style: none;
+}
+
+.container-secciones li {
+    padding: 14px 0;
+    line-height: 1.125rem;
+    font-size: .875rem;
+}
+
+.container-secciones h2 {
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
