@@ -323,7 +323,7 @@ svg {
 }
 
 .boton-bookmark {
-    
+
     width: 11.5%;
     display: flex;
     justify-content: center;
@@ -777,7 +777,7 @@ svg {
 
 .seccion-animes-pv {
     gap: 2.5rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 70px;
     margin-bottom: 2.5rem;
@@ -790,7 +790,7 @@ svg {
 }
 
 .parrafo-pv {
-        font-size: .875rem;
+    font-size: .875rem;
     color: var(--color);
     -webkit-line-clamp: var(--max-lines);
     -webkit-box-orient: vertical;
@@ -802,22 +802,70 @@ svg {
     margin-top: 8px;
 }
 
-.doblaje-pv span{
-    color:#8c8c8c;
-    display:flex;
+.doblaje-pv span {
+    color: #8c8c8c;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: .875rem;
 }
 
-.doblaje-pv svg{
+.doblaje-pv svg {
     fill: var(--color);
 }
 
-.btn-pv div{
+.btn-pv div {
     width: 100%;
 }
 
 .btn-pv svg {
-    fill:#000000
+    fill: #000000
+}
+
+/* MUSIC VIDEOS */
+
+.container-video {
+    display: flex;
+    padding-block: calc(0.75rem / 2);
+    padding-inline: calc(0.625rem / 2);
+}
+
+.music-info {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 14px 0;
+    padding-left: 12px;
+}
+
+.music-info h3 {
+    color: var(--color);
+    -webkit-line-clamp: var(--max-lines);
+    -webkit-box-orient: vertical;
+    --max-lines: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: unset;
+    font-size: .875rem;
+    font-weight: 600px;
+}
+
+.seccion-music-video span,
+.seccion-music-video small {
+    color: #8c8c8c;
+    font-size: .875rem;
+}
+
+.music-info small {
+    
+    font-size: .625rem;
+    font-weight: 900;
+}
+
+.container-music-videos {
+    padding-top: 4px;
+}
+
+.seccion-music-video {
+    margin-bottom: 2.5rem
 }
