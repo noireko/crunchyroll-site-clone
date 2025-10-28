@@ -395,7 +395,11 @@ svg {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+}
 
+.carrusel-animes::-webkit-scrollbar {
+    display: none;
 }
 
 .articulo-anime {
