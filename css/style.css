@@ -362,7 +362,7 @@ svg {
 }
 
 .seccion-demi-titu {
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .carrusel-container {
@@ -913,6 +913,10 @@ svg {
 
 .seccion-music-video {
     margin-bottom: 2.5rem
+}
+
+.seccion-music-video .seccion-demi-titu{
+    padding-left: 0;
 }
 
 /* GATO NEGRO */
