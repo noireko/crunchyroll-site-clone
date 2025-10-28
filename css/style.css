@@ -6,7 +6,6 @@
 
 /* GENERAL */
 
-
 body {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -355,6 +354,19 @@ svg {
 .carrusel-animes {
     display: flex;
     gap: .625rem;
+    padding-right: 20px;
+}
+
+.seccion-carru-titulo {
+    padding-left: 20px;
+}
+
+.seccion-demi-titu {
+    padding-left: 20px;
+}
+
+.carrusel-container {
+    padding-left: 20px;
 }
 
 .seccion-cuerpo {
@@ -368,12 +380,40 @@ svg {
 
 .info-anime-carru {
     color: #ffffff;
+    width: 170px;
 }
 
 .imagen-anime-carru {
     height: 15.9375rem;
     width: auto;
 }
+
+.carrusel-animes {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+}
+
+.articulo-anime {
+    flex: 0 0 calc(50% - 1.5rem);
+    scroll-snap-align: start;
+    max-width: 170px;
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+    opacity: 0.4;
+    filter: grayscale(60%);
+}
+
+.articulo-anime.active {
+  opacity: 1;
+  filter: none;
+}
+
+
+
 
 /* WATCH LATER */
 
