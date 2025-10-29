@@ -875,7 +875,6 @@ svg {
 .container-video {
     display: flex;
     padding-block: calc(0.75rem / 2);
-    padding-inline: calc(0.625rem / 2);
 }
 
 .music-info {
@@ -912,15 +911,51 @@ svg {
 }
 
 .container-music-videos {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 1rem;
     padding-top: .25rem;
+    scrollbar-width: none;
+}
+
+.carrusel-musica::-webkit-scrollbar {
+    display: none;
+}
+
+.music-slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    scroll-snap-align: center;
+}
+
+.music-slide {
+    opacity: 0.6;
+    transform: scale(0.95);
+    transition: 
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        filter 0.5s ease;
+    filter: brightness(0.7);
+}
+
+.music-slide.active {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1);
 }
 
 .seccion-music-video {
-    margin-bottom: 2.5rem
+    margin-bottom: 2.5rem;
+    padding: 20px
 }
 
 .seccion-music-video .seccion-demi-titu{
     padding-left: 0;
+    padding-right: 0;
 }
 
 /* GATO NEGRO */
