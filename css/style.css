@@ -58,6 +58,10 @@ h2 {
     --h1-font-size: 1.375rem;
     --h1-padding-bottom: .75rem;
     --h1-line-height: 1.75rem;
+    --h1-font-size-desk: 1.75rem;
+    --h1-padding-bottom-desk: 16px;
+    --h1-line-height-desk: 2.25rem;
+
 }
 
 
@@ -426,6 +430,10 @@ svg {
 
 
 /* WATCH LATER */
+
+.historial {
+    display: none;
+}
 
 .seguir-viendo {
     margin-top: 3.5rem;
@@ -1137,6 +1145,15 @@ footer .container-secciones {
 
 @media (min-width: 1024px) {
 
+    h2 {
+        color: var(--color);
+        font-weight: var(--h1-font-weight);
+        font-size: var(--h1-font-size-desk);
+        padding-bottom: var(--h1-padding-bottom-desk);
+        line-height: var(--h1-line-height-desk);
+    }
+
+
     /* HEADER */
 
     .contenedor {
@@ -1294,28 +1311,22 @@ footer .container-secciones {
 
 
 
-    
+
     .seccion-carru-titulo {
         padding-left: 80px;
     }
 
-    
-.carrusel-container {
-    padding-left: 0;
-}
+
+    .carrusel-container {
+        padding-left: 0;
+    }
 
     .seccion-carru-titulo {
         position: relative;
         z-index: 1;
     }
 
-    .seccion-carru-titulo h2 {
 
-        font-weight: 700;
-        line-height: 2.25rem;
-        font-size: 1.75rem;
-        padding-bottom: 16px;
-    }
 
     .carrusel-animes {
         max-width: 2000px;
@@ -1341,5 +1352,63 @@ footer .container-secciones {
     .articulo-anime.active {
         opacity: 1;
         transform: scale(1);
+    }
+
+    /* SEGUIR VIENDO */
+
+    .sv-1 {
+        flex-direction: column;
+        width: 276px;
+        height: 244.5px;
+    }
+
+    .contenedor-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-anime-sv {
+        line-height: 0.875rem;
+        font-size: .625rem;
+    }
+
+    .nombre-anime-sv {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .sub-sv {
+        line-height: 1.125rem;
+        font-size: .875rem;
+    }
+
+    .info-sv {
+        padding: 0;
+        padding-top: 12px;
+    }
+
+    .contenedor-animes-sv {
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .historial {
+        display: block;
+        color: #8c8c8c;
+    }
+
+    .contenedor-titulo-sv a {
+        display: flex;
+        align-items: center;
+        font-size: .875rem;
+        line-height: 1.125rem;
+        fill: #8c8c8c;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+
+    .contenedor-titulo-sv a svg {
+        fill: #8c8c8c;
     }
 }
