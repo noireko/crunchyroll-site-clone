@@ -249,6 +249,7 @@ svg {
     flex-direction: column;
     justify-content: end;
     color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 .seccion-info {
@@ -1138,6 +1139,10 @@ footer .container-secciones {
 
     /* HEADER */
 
+    .contenedor {
+        padding: 0 80px;
+    }
+
     .logo-cel,
     .vis-cel {
         display: none;
@@ -1199,17 +1204,22 @@ footer .container-secciones {
         fill: #bbb;
     }
 
-.icono-bookmark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .icono-bookmark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.icono-lupa,
-.icono-bookmark {
-    padding: 0 0.9rem;
-}
-    /* CUERPO */
+    .icono-lupa,
+    .icono-bookmark {
+        padding: 0 0.9rem;
+    }
+
+    /* BIG ANIME SECTION */
+
+    .seccion-anime-todo {
+        height: 80vh;
+    }
 
     .seccion-anime {
         width: 100%;
@@ -1221,7 +1231,7 @@ footer .container-secciones {
         width: 100%;
         height: 100%;
         display: flex;
-        
+
     }
 
     .seccion-logo-anime {
@@ -1239,7 +1249,7 @@ footer .container-secciones {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content:baseline;
+        justify-content: baseline;
         align-items: baseline;
         background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
         padding-left: 80px;
@@ -1278,5 +1288,58 @@ footer .container-secciones {
 
     .barritas {
         padding-top: 50px
+    }
+
+    /* CARROUSEL */
+
+
+
+    
+    .seccion-carru-titulo {
+        padding-left: 80px;
+    }
+
+    
+.carrusel-container {
+    padding-left: 0;
+}
+
+    .seccion-carru-titulo {
+        position: relative;
+        z-index: 1;
+    }
+
+    .seccion-carru-titulo h2 {
+
+        font-weight: 700;
+        line-height: 2.25rem;
+        font-size: 1.75rem;
+        padding-bottom: 16px;
+    }
+
+    .carrusel-animes {
+        max-width: 2000px;
+        gap: 2rem;
+        padding-left: 80px;
+        scroll-padding-left: 5rem;
+    }
+
+    .articulo-anime {
+        max-width: 266px;
+    }
+
+    .articulo-anime img {
+        width: 266px;
+        height: auto;
+    }
+
+    .articulo-anime {
+        opacity: 0.6;
+        transition: opacity 0.4s ease;
+    }
+
+    .articulo-anime.active {
+        opacity: 1;
+        transform: scale(1);
     }
 }
