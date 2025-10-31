@@ -3,11 +3,11 @@ const nav = document.getElementById("nav");
 const visCel = document.getElementById("vis-cel");
 
 hamburguesa.addEventListener("click", () => {
-    nav.classList.toggle("active");
+  nav.classList.toggle("active");
 });
 
 visCel.addEventListener("click", () => {
-    visCel.classList.toggle("active");
+  visCel.classList.toggle("active");
 })
 
 const carousels = document.querySelectorAll('.carrusel-animes');
@@ -19,14 +19,21 @@ carousels.forEach(carousel => {
     const rect = carousel.getBoundingClientRect();
     const carouselCenter = rect.left + rect.width / 2;
 
-    items.forEach(item => {
+    // Calculamos la distancia de cada item al centro
+    const distances = Array.from(items).map(item => {
       const itemRect = item.getBoundingClientRect();
       const itemCenter = itemRect.left + itemRect.width / 2;
-
       const distance = Math.abs(carouselCenter - itemCenter);
-      const threshold = itemRect.width / 1.2;
+      return { item, distance };
+    });
 
-      if (distance < threshold) {
+    // Ordenamos por distancia y tomamos los 6 más cercanos
+    distances.sort((a, b) => a.distance - b.distance);
+    const activeItems = distances.slice(0, 6).map(d => d.item);
+
+    // Aplicamos clases
+    items.forEach(item => {
+      if (activeItems.includes(item)) {
         item.classList.add('active');
       } else {
         item.classList.remove('active');
@@ -38,6 +45,7 @@ carousels.forEach(carousel => {
     requestAnimationFrame(updateActiveItems);
   });
 
+  window.addEventListener('resize', updateActiveItems);
   updateActiveItems();
 });
 
@@ -45,25 +53,25 @@ const carousel = document.querySelector('.container-music-videos');
 const slides = document.querySelectorAll('.music-slide');
 
 function updateActiveSlides() {
-    const rect = carousel.getBoundingClientRect();
+  const rect = carousel.getBoundingClientRect();
 
-    slides.forEach(slide => {
-        const slideRect = slide.getBoundingClientRect();
-        const slideCenter = slideRect.left + slideRect.width / 2;
-        const carouselCenter = rect.left + rect.width / 2;
+  slides.forEach(slide => {
+    const slideRect = slide.getBoundingClientRect();
+    const slideCenter = slideRect.left + slideRect.width / 2;
+    const carouselCenter = rect.left + rect.width / 2;
 
-        const distance = Math.abs(carouselCenter - slideCenter);
-        const threshold = slideRect.width / 2;
+    const distance = Math.abs(carouselCenter - slideCenter);
+    const threshold = slideRect.width / 2;
 
-        if (distance < threshold) {
-            slide.classList.add('active');
-        } else {
-            slide.classList.remove('active');
-        }
-    });
+    if (distance < threshold) {
+      slide.classList.add('active');
+    } else {
+      slide.classList.remove('active');
+    }
+  });
 }
 
 carousel.addEventListener('scroll', () => {
-    requestAnimationFrame(updateActiveSlides);
+  requestAnimationFrame(updateActiveSlides);
 });
 updateActiveSlides();
