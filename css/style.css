@@ -1411,4 +1411,48 @@ footer .container-secciones {
     .contenedor-titulo-sv a svg {
         fill: #8c8c8c;
     }
+
+    /* SECCION PELICULA BANNER */
+
+    .seccion-peli img {
+        width: 1350px;
+        height: auto;
+    }
+
+    .seccion-peli {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* SECCION GENERO */
+
+    .seccion-demi-titu {
+        padding-left: 80px;
+    }
+
+    /* NEW EPISODES */
+
+    .div-hoy h3 {
+        line-height: 1.75rem;
+        font-size: 1.375rem;
+    }
+
+    .new-ep img {
+        height: 82px;
+        width: auto;
+    }
+
+    .new-ep {
+        max-width: 562px;
+        width: 100%;
+    }
+
+    .info-newep {
+        width: 100%;
+    }
+
+    .seccion-animes-nuevos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
