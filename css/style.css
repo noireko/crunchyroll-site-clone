@@ -1490,4 +1490,36 @@ footer .container-secciones {
         margin-bottom: 55px;
     }
 
+ .seccion-noticias {
+    padding: 25px 260px;
+ }
+
+ .contededor-notis {
+    padding: 40px 40px;
+ }
+    
+
+ .contenedor-info-noticias {
+    display:flex;
+    gap: 2rem
+ }
+
+ .contenedor-pilares-notis {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+
+ .contenedor-noti-1 {
+    width: 303px;
+    height: 100%
+ }
+
+ .noti-reciente {
+    height: 78px;
+    width: 469.5px;
+ }
 }
