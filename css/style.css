@@ -591,6 +591,10 @@ svg {
 
 /* NEW EPISODES */
 
+.contenedor-ayer {
+    display: none;
+}
+
 .seccion-nuevos-ep {
     margin-top: 4.9rem
 }
@@ -681,7 +685,6 @@ svg {
 }
 
 .seccion-btn-newep {
-    background-color: #213944;
     color: #fff;
     display: flex;
     cursor: pointer;
@@ -692,6 +695,8 @@ svg {
 }
 
 .btn-newep {
+    width: 100%;
+    background-color: #213944;
     align-items: center;
     cursor: inherit;
     display: flex;
@@ -1060,6 +1065,10 @@ footer .container-secciones {
     border-left: .0625rem solid #8c8c8c;
 }
 
+.desk-only {
+    display: none;
+}
+
 .derechos-footer svg {
     width: 10rem;
     height: auto;
@@ -1144,6 +1153,10 @@ footer .container-secciones {
 /* DESKTOP */
 
 @media (min-width: 1024px) {
+
+    .desk-only {
+        display: flex;
+    }
 
     h2 {
         color: var(--color);
@@ -1432,6 +1445,14 @@ footer .container-secciones {
 
     /* NEW EPISODES */
 
+    .seccion-titu-newep svg {
+        margin-top: 6px;
+    }
+
+    .div-hoy {
+        display: block;
+    }
+
     .div-hoy h3 {
         line-height: 1.75rem;
         font-size: 1.375rem;
@@ -1455,4 +1476,18 @@ footer .container-secciones {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .anime-hoy {
+        margin-bottom: 24px;
+    }
+
+    .btn-newep {
+        width: 46%;
+    }
+
+    .seccion-btn-newep {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
 }
