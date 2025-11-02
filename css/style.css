@@ -1490,12 +1490,18 @@ footer .container-secciones {
         margin-bottom: 55px;
     }
 
+    /* NOTICIAS */
+
     .seccion-noticias {
-        padding: 25px 260px;
+        padding: 25px 0;
+        width: 100%;
     }
 
     .contededor-notis {
         padding: 40px 40px;
+        width: 1382px;
+        margin: 0 auto;
+        position: relative
     }
 
     .pilares-noticias {
@@ -1608,5 +1614,19 @@ footer .container-secciones {
         margin-top: 2px
     }
 
-   
+    .noti-gato {
+
+        transform: translate(-50px, 65%);
+    }
+
+    .noti-chica,
+    .noti-gato {
+        position: absolute;
+    }
+
+    .noti-chica {
+        z-index: 0;
+        position: absolute;
+        transform: translate(2rem, 2.5rem);
+    }
 }
