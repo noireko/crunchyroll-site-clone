@@ -891,9 +891,7 @@ svg {
     fill: var(--color);
 }
 
-.btn-pv div {
-    width: 100%;
-}
+
 
 .btn-pv svg {
     fill: #000000
@@ -1702,9 +1700,18 @@ footer .container-secciones {
         margin-bottom: 24px;
     }
 
+    .boton-bkmark {
+        display: block;
+    }
+
+.boton-bkmark svg {
+    fill: #ff630c;
+}
+
     .boton-bkmark a {
-        background-color: #ff630c;
-        color: #000000;
+        background-color: transparent;
+        border: 2px solid #ff630c;
+        color: #ff630c;
         font-size: .875rem;
         line-height: 1.125rem;
         font-weight: 900;
@@ -1727,14 +1734,21 @@ footer .container-secciones {
         gap: 10px
     }
 
+    .btn-pv .boton-mirar {
+        width: auto;
+    }
+
     /* VIDEO MUSICAL */
 
     .container-video {
         flex-direction: column;
-        width: 276px;
-        height: 244.5px;
         scroll-snap-align: start;
     }
+
+.container-video {
+    width: 265.83px;
+    height: auto;
+}
 
     .music-info {
         padding: 0;
