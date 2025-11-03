@@ -51,15 +51,22 @@ carousels.forEach(carousel => {
 
 const carousel = document.querySelector('.container-music-videos');
 const slides = document.querySelectorAll('.music-slide');
+const videos = document.querySelectorAll('.container-video');
 
+function isDesktop() {
+  return window.innerWidth >= 1024;
+}
+
+// ===== Mobile =====
 function updateActiveSlides() {
+  if (isDesktop()) return;
+
   const rect = carousel.getBoundingClientRect();
+  const carouselCenter = rect.left + rect.width / 2;
 
   slides.forEach(slide => {
     const slideRect = slide.getBoundingClientRect();
     const slideCenter = slideRect.left + slideRect.width / 2;
-    const carouselCenter = rect.left + rect.width / 2;
-
     const distance = Math.abs(carouselCenter - slideCenter);
     const threshold = slideRect.width / 2;
 
@@ -71,7 +78,35 @@ function updateActiveSlides() {
   });
 }
 
+// ===== Desktop =====
+function updateActiveVideos() {
+  if (!isDesktop()) return; 
+  const carouselRect = carousel.getBoundingClientRect();
+
+  videos.forEach(video => {
+    const videoRect = video.getBoundingClientRect();
+    const videoWidth = videoRect.width;
+
+    const visibleLeft = Math.max(videoRect.left, carouselRect.left);
+    const visibleRight = Math.min(videoRect.right, carouselRect.right);
+    const visibleWidth = visibleRight - visibleLeft;
+
+    if (visibleWidth >= videoWidth / 2) {
+      video.classList.add('active');
+    } else {
+      video.classList.remove('active');
+    }
+  });
+}
+
+function updateCarousel() {
+  updateActiveSlides();
+  updateActiveVideos();
+}
+
 carousel.addEventListener('scroll', () => {
-  requestAnimationFrame(updateActiveSlides);
+  requestAnimationFrame(updateCarousel);
 });
-updateActiveSlides();
+window.addEventListener('resize', updateCarousel);
+
+updateCarousel();
