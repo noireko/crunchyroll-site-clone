@@ -944,6 +944,8 @@ svg {
     gap: 1rem;
     padding-top: .25rem;
     scrollbar-width: none;
+    padding-left: 20px;
+    scroll-padding-left: 20px;
 }
 
 .carrusel-musica::-webkit-scrollbar {
@@ -976,7 +978,7 @@ svg {
 
 .seccion-music-video {
     margin-bottom: 2.5rem;
-    padding: 20px
+
 }
 
 .seccion-music-video .seccion-demi-titu {
@@ -1449,10 +1451,14 @@ footer .container-secciones {
         justify-content: center;
         position: relative;
         z-index: 1;
-        gap: 3.5rem
+        margin: 3.5rem 0;
     }
 
     /* SECCION GENERO */
+
+    .seccion-music-video .seccion-demi-titu {
+        padding-left: 80px;
+    }
 
     .seccion-demi-titu {
         padding-left: 80px;
@@ -1650,5 +1656,115 @@ footer .container-secciones {
         z-index: 0;
         position: absolute;
         transform: translate(-3.2rem, 1rem);
+    }
+
+    /* ANIMES POR VER */
+    .contenedor-thumbnail-pv img {
+        width: 633.5px;
+        height: auto;
+    }
+
+    .anime-pv {
+        display: flex;
+        width: 77%;
+
+    }
+
+    .contenedor-info-pv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .contenedor-titu-pv h2 {
+        padding-bottom: 8px;
+    }
+
+    .seccion-animes-pv {
+        align-items: center;
+    }
+
+    .doblaje-pv svg {
+        display: none;
+    }
+
+    .parrafo-pv {
+        -webkit-line-clamp: var(--max-lines);
+        -webkit-box-orient: vertical;
+        line-clamp: 2;
+        --max-lines: 2;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    /* VIDEO MUSICAL */
+
+    .container-video {
+        flex-direction: column;
+        width: 276px;
+        height: 244.5px;
+        scroll-snap-align: start;
+    }
+
+    .music-info {
+        padding: 0;
+        padding-top: 12px;
+    }
+
+    .music-info small {
+        line-height: 0.875rem;
+        font-size: .625rem;
+        font-weight: 900;
+    }
+
+    .music-info h3 {
+        margin-block-end: .5rem;
+        -webkit-line-clamp: var(--max-lines);
+        -webkit-box-orient: vertical;
+        --max-lines: 2;
+        line-clamp: 2;
+        display: -webkit-box;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .music-slide {
+        flex-direction: row;
+        flex: 1 1 auto;
+        gap: 30px;
+        scroll-snap-align: none;
+    }
+
+    .container-music-videos {
+        gap: 30px;
+        padding-left: 5rem;
+        scroll-padding-left: 5rem;
+    }
+
+    .music-slide,
+    .music-slide.active {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+
+    .container-video {
+        opacity: 0.6;
+        transform: scale(0.95);
+        transition:
+            opacity 0.5s ease,
+            transform 0.5s ease,
+            filter 0.5s ease;
+        filter: brightness(0.7);
+    }
+
+    .container-video.active {
+        opacity: 1;
+        transform: scale(1);
+        filter: brightness(1);
     }
 }
