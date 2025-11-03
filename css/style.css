@@ -314,6 +314,10 @@ svg {
     width: 100%;
 }
 
+.boton-bkmark {
+    display: none;
+}
+
 .boton-mirar a {
     background-color: #ff630c;
     color: #000000;
@@ -332,7 +336,6 @@ svg {
 
 .boton-mirar a {
     height: 2.5rem;
-    width: 100%
 }
 
 .seccion-boton a svg {
@@ -1697,6 +1700,31 @@ footer .container-secciones {
         line-height: 1.5rem;
         font-size: 1rem;
         margin-bottom: 24px;
+    }
+
+    .boton-bkmark a {
+        background-color: #ff630c;
+        color: #000000;
+        font-size: .875rem;
+        line-height: 1.125rem;
+        font-weight: 900;
+        gap: .3125rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        padding: 0 16px;
+    }
+
+    .boton-mirar a {
+
+        display: inline-flex;
+        padding: 0 16px;
+    }
+
+    .btn-pv {
+        display: flex;
+        gap: 10px
     }
 
     /* VIDEO MUSICAL */
