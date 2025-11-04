@@ -60,10 +60,10 @@ No dependencies or installations required — the project runs locally with plai
 ---
 
 ## Screenshots
-<img width="1905" height="941" alt="image" src="https://github.com/user-attachments/assets/d994bb16-e049-4741-98f1-a467ab457a39" />
-<img width="1900" height="940" alt="image" src="https://github.com/user-attachments/assets/e14a89de-3d95-4a04-8e72-dd5109d4f6fe" />
-<img width="387" height="844" alt="image" src="https://github.com/user-attachments/assets/51a871ce-bae5-476a-af9a-0c89fa2a809f" />
-<img width="384" height="839" alt="image" src="https://github.com/user-attachments/assets/6c8bc242-0c3e-4eb7-9d4d-791d29478ed3" />
+<img width="1905" height="941" alt="image" src="https://github.com/user-attachments/assets/d994bb16-e049-4741-98f1-a467ab457a39">
+<img width="1900" height="940" alt="image" src="https://github.com/user-attachments/assets/e14a89de-3d95-4a04-8e72-dd5109d4f6fe">
+<img width="387" height="844" alt="image" src="https://github.com/user-attachments/assets/51a871ce-bae5-476a-af9a-0c89fa2a809f" style="margin-left: 40px;">
+<img width="384" height="839" alt="image" src="https://github.com/user-attachments/assets/6c8bc242-0c3e-4eb7-9d4d-791d29478ed3">
 
 
 
