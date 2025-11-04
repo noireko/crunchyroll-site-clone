@@ -10,43 +10,112 @@ visCel.addEventListener("click", () => {
   visCel.classList.toggle("active");
 })
 
-const carousels = document.querySelectorAll('.carrusel-animes');
+document.addEventListener('DOMContentLoaded', () => {
+  const carousels = document.querySelectorAll('.carrusel-animes');
 
-carousels.forEach(carousel => {
-  const items = carousel.querySelectorAll('.articulo-anime');
+  carousels.forEach(carousel => {
+    const items = carousel.querySelectorAll('.articulo-anime');
+    const seccion = carousel.closest('.seccion-genero-carru');
+    if (!seccion) return;
 
-  function updateActiveItems() {
-    const rect = carousel.getBoundingClientRect();
-    const carouselCenter = rect.left + rect.width / 2;
+    const btnPrev = seccion.querySelector('.btn-prev');
+    const btnNext = seccion.querySelector('.btn-next');
+    if (!btnPrev || !btnNext) return;
 
-    // Calculamos la distancia de cada item al centro
-    const distances = Array.from(items).map(item => {
-      const itemRect = item.getBoundingClientRect();
-      const itemCenter = itemRect.left + itemRect.width / 2;
-      const distance = Math.abs(carouselCenter - itemCenter);
-      return { item, distance };
-    });
+    // ----------------------------
+    // FUNCIONES AUXILIARES
+    // ----------------------------
 
-    // Ordenamos por distancia y tomamos los 6 más cercanos
-    distances.sort((a, b) => a.distance - b.distance);
-    const activeItems = distances.slice(0, 6).map(d => d.item);
+    function updateActiveItems() {
+      const rect = carousel.getBoundingClientRect();
+      const carouselCenter = rect.left + rect.width / 2;
 
-    // Aplicamos clases
-    items.forEach(item => {
-      if (activeItems.includes(item)) {
-        item.classList.add('active');
+      const distances = Array.from(items).map(item => {
+        const itemRect = item.getBoundingClientRect();
+        const itemCenter = itemRect.left + itemRect.width / 2;
+        const distance = Math.abs(carouselCenter - itemCenter);
+        return { item, distance };
+      });
+
+      distances.sort((a, b) => a.distance - b.distance);
+      const activeItems = distances.slice(0, 6).map(d => d.item);
+
+      items.forEach(item => {
+        if (activeItems.includes(item)) item.classList.add('active');
+        else item.classList.remove('active');
+      });
+    }
+
+    function getDesplazamiento() {
+      if (!items.length) return carousel.clientWidth * 0.8;
+      const itemWidth = items[0].getBoundingClientRect().width;
+      const visibleCount = Math.max(1, Math.floor(carousel.clientWidth / itemWidth));
+      return Math.round(itemWidth * visibleCount);
+    }
+
+    // Actualiza visibilidad de las flechas
+    function updateArrows() {
+      const scrollLeft = carousel.scrollLeft;
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+      // margen pequeño para evitar errores por redondeo
+      const margin = 10;
+
+      if (scrollLeft <= margin) {
+        btnPrev.style.opacity = "0";
+        btnPrev.style.pointerEvents = "none";
       } else {
-        item.classList.remove('active');
+        btnPrev.style.opacity = "1";
+        btnPrev.style.pointerEvents = "auto";
       }
+
+      if (scrollLeft >= maxScroll - margin) {
+        btnNext.style.opacity = "0";
+        btnNext.style.pointerEvents = "none";
+      } else {
+        btnNext.style.opacity = "1";
+        btnNext.style.pointerEvents = "auto";
+      }
+    }
+
+    // ----------------------------
+    // EVENTOS
+    // ----------------------------
+
+    carousel.addEventListener('scroll', () => {
+      requestAnimationFrame(() => {
+        updateActiveItems();
+        updateArrows();
+      });
     });
-  }
 
-  carousel.addEventListener('scroll', () => {
-    requestAnimationFrame(updateActiveItems);
+    window.addEventListener('resize', () => {
+      updateActiveItems();
+      updateArrows();
+    });
+
+    btnNext.addEventListener('click', e => {
+      e.preventDefault();
+      carousel.scrollBy({
+        left: getDesplazamiento(),
+        behavior: 'smooth'
+      });
+    });
+
+    btnPrev.addEventListener('click', e => {
+      e.preventDefault();
+      carousel.scrollBy({
+        left: -getDesplazamiento(),
+        behavior: 'smooth'
+      });
+    });
+
+    // ----------------------------
+    // INICIALIZACIÓN
+    // ----------------------------
+    updateActiveItems();
+    updateArrows();
   });
-
-  window.addEventListener('resize', updateActiveItems);
-  updateActiveItems();
 });
 
 const carousel = document.querySelector('.container-music-videos');
@@ -80,7 +149,7 @@ function updateActiveSlides() {
 
 // ===== Desktop =====
 function updateActiveVideos() {
-  if (!isDesktop()) return; 
+  if (!isDesktop()) return;
   const carouselRect = carousel.getBoundingClientRect();
 
   videos.forEach(video => {
