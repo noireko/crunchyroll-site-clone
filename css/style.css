@@ -1358,7 +1358,7 @@ footer .container-secciones {
 
     .carrusel-animes {
         max-width: 2000px;
-        gap: 2rem;
+        gap: 30px;
         padding-left: 80px;
         scroll-padding-left: 5rem;
     }
@@ -1381,6 +1381,44 @@ footer .container-secciones {
         opacity: 1;
         transform: scale(1);
     }
+
+    .seccion-genero-carru {
+        position: relative;
+    }
+
+    .btn-flechas {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-60%);
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+        
+    }
+
+    .btn-flechas button {
+        pointer-events: all;
+        background: rgba(0, 0, 0, 0.13);
+        color: white;
+        border: none;
+        width: 75px;
+        height: 399px;
+        cursor: pointer;
+        transition: background 1s ease;
+    }
+
+    .btn-flechas button:hover {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) calc(0.5 * max(5rem)), rgba(0, 0, 0, 0.7))
+    }
+
+    .btn-flechas button svg {
+        height: 100%;
+        width: 40px;
+        fill:var(--color);
+    }
+
 
     /* SEGUIR VIENDO */
 
@@ -1704,9 +1742,9 @@ footer .container-secciones {
         display: block;
     }
 
-.boton-bkmark svg {
-    fill: #ff630c;
-}
+    .boton-bkmark svg {
+        fill: #ff630c;
+    }
 
     .boton-bkmark a {
         background-color: transparent;
@@ -1745,10 +1783,10 @@ footer .container-secciones {
         scroll-snap-align: start;
     }
 
-.container-video {
-    width: 265.83px;
-    height: auto;
-}
+    .container-video {
+        width: 265.83px;
+        height: auto;
+    }
 
     .music-info {
         padding: 0;
