@@ -586,6 +586,7 @@ svg {
 
 .seccion-demi-titu {
     padding-bottom: .75rem;
+    position: relative;
 }
 
 .seccion-demi-titu span {
@@ -596,6 +597,7 @@ svg {
 .seccion-demi-titu h2 {
     padding: 0;
     margin-bottom: .25rem;
+    z-index: 1;
 }
 
 .seccion-generos {
@@ -1395,10 +1397,11 @@ footer .container-secciones {
         top: 50%;
         left: 0;
         right: 0;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
         pointer-events: none;
+        height: 100%;
 
     }
 
@@ -1407,7 +1410,7 @@ footer .container-secciones {
         color: white;
         border: none;
         width: 75px;
-        height: 399px;
+        height: 100%;
         cursor: pointer;
         transition: background 1s ease;
     }
@@ -1432,6 +1435,8 @@ footer .container-secciones {
         height: 100%;
         width: 40px;
         fill: var(--color);
+        
+        transform: translateY(-8%);
     }
 
 
@@ -1863,3 +1868,8 @@ footer .container-secciones {
         filter: brightness(1);
     }
 }
+
+/* 
+
+
+*/
