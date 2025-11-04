@@ -265,7 +265,6 @@ svg {
     flex-direction: column;
     justify-content: end;
     color: white;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 .seccion-info {
@@ -860,7 +859,7 @@ svg {
     gap: 2.5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 4.375rem;
+    margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
 
@@ -897,7 +896,9 @@ svg {
     fill: var(--color);
 }
 
-
+.contenedor-info-pv .boton-mirar {
+    width: 100%;
+}
 
 .btn-pv svg {
     fill: #000000
@@ -989,7 +990,6 @@ svg {
 }
 
 .seccion-music-video .seccion-demi-titu {
-    padding-left: 0;
     padding-right: 0;
 }
 
@@ -1278,6 +1278,10 @@ footer .container-secciones {
         width: 100%;
         height: 100%;
         display: flex;
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0) 50%,
+                rgba(0, 0, 0, 1) 100%);
 
     }
 
@@ -1298,7 +1302,10 @@ footer .container-secciones {
         flex-direction: column;
         justify-content: baseline;
         align-items: baseline;
-        background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        background: linear-gradient(to left,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0) 50%,
+                rgba(0, 0, 0, 1) 100%);
         padding-left: 80px;
         padding-top: 150px;
     }
@@ -1327,6 +1334,11 @@ footer .container-secciones {
         margin-block-end: 2rem;
         overflow: hidden;
         white-space: unset;
+    }
+
+    .descripcion p {
+        line-height: 1.5rem;
+        font-size: 1rem;
     }
 
     .seccion-grade {
@@ -1435,7 +1447,7 @@ footer .container-secciones {
         height: 100%;
         width: 40px;
         fill: var(--color);
-        
+
         transform: translateY(-8%);
     }
 
