@@ -1,6 +1,6 @@
 # Crunchyroll Clone
 
-A personal project where I recreated the main interface of [Crunchyroll](https://www.crunchyroll.com), the popular anime streaming platform, using only **HTML**, **CSS**, and **vanilla JavaScript** — without any frameworks or external libraries.  
+A personal project where I recreated the main interface of [Crunchyroll](https://www.crunchyroll.com), the popular anime streaming platform, using only **HTML**, **CSS**, and **vanilla JavaScript**, without any frameworks or external libraries.  
 The goal was to **improve my front-end development skills** by replicating the visual style and user experience of the original site.
 
 ---
