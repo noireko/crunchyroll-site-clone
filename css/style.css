@@ -1399,12 +1399,11 @@ footer .container-secciones {
         display: flex;
         justify-content: space-between;
         pointer-events: none;
-        
+
     }
 
     .btn-flechas button {
         pointer-events: all;
-        background: rgba(0, 0, 0, 0.13);
         color: white;
         border: none;
         width: 75px;
@@ -1413,14 +1412,26 @@ footer .container-secciones {
         transition: background 1s ease;
     }
 
-    .btn-flechas button:hover {
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) calc(0.5 * max(5rem)), rgba(0, 0, 0, 0.7))
+    .btn-next {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13));
+    }
+
+    .btn-prev {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.13));
+    }
+
+    .btn-next:hover {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) calc(0.5 * max(5rem)), rgba(0, 0, 0, 0.7))
+    }
+
+    .btn-prev:hover {
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) calc(0.5 * max(5rem)), rgba(0, 0, 0, 0.7))
     }
 
     .btn-flechas button svg {
         height: 100%;
         width: 40px;
-        fill:var(--color);
+        fill: var(--color);
     }
 
 
