@@ -58,6 +58,10 @@ h2 {
     display: none;
 }
 
+.btn-flechas {
+    display: none;
+}
+
 /* ROOT */
 
 :root {
