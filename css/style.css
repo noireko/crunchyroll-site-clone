@@ -1264,12 +1264,12 @@ footer .container-secciones {
     /* BIG ANIME SECTION */
 
     .seccion-anime-todo {
-        height: 80vh;
+        height: 48rem;
     }
 
     .seccion-anime {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
 
