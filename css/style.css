@@ -1187,7 +1187,7 @@ footer .container-secciones {
     /* HEADER */
 
     .contenedor {
-        padding: 0 80px;
+        padding: 0 clamp(2.5rem, 4.1667vw, 5rem);
     }
 
     .logo-cel,
@@ -1306,8 +1306,8 @@ footer .container-secciones {
                 rgba(0, 0, 0, 0) 0%,
                 rgba(0, 0, 0, 0) 50%,
                 rgba(0, 0, 0, 1) 100%);
-        padding-left: 80px;
-        padding-top: 150px;
+        padding-left: clamp(2.5rem, 4.1667vw, 5rem);
+        padding-top: clamp(5rem, 7.8125vw, 150px);
     }
 
     .boton-mirar a {
@@ -1359,7 +1359,7 @@ footer .container-secciones {
 
 
     .seccion-carru-titulo {
-        padding-left: 80px;
+        padding-left: clamp(2.5rem, 4.1667vw, 5rem);
     }
 
 
@@ -1376,17 +1376,17 @@ footer .container-secciones {
 
     .carrusel-animes {
         max-width: 2000px;
-        gap: 30px;
-        padding-left: 80px;
-        scroll-padding-left: 5rem;
+        gap: clamp(16px, 1.5625vw, 30px);
+        padding-left: clamp(2.5rem, 4.1667vw, 5rem);
+        scroll-padding-left: clamp(2.5rem, 4.1667vw, 5rem);
     }
 
     .articulo-anime {
-        max-width: 266px;
+        max-width: clamp(170px, 13.854vw, 266px);
     }
 
     .articulo-anime img {
-        width: 266px;
+        width: clamp(170px, 13.854vw, 266px);
         height: auto;
     }
 
@@ -1456,8 +1456,9 @@ footer .container-secciones {
 
     .sv-1 {
         flex-direction: column;
-        width: 276px;
-        height: 244.5px;
+        --sv-w: clamp(190px, 14.375vw, 276px);
+        width: var(--sv-w);
+        height: calc(var(--sv-w) * 0.8859);
     }
 
     .contenedor-thumbnail {
@@ -1513,7 +1514,7 @@ footer .container-secciones {
     /* SECCION PELICULA BANNER */
 
     .seccion-peli img {
-        width: 1350px;
+        width: min(1350px, 92%);
         height: auto;
     }
 
@@ -1528,11 +1529,11 @@ footer .container-secciones {
     /* SECCION GENERO */
 
     .seccion-music-video .seccion-demi-titu {
-        padding-left: 80px;
+        padding-left: clamp(2.5rem, 4.1667vw, 5rem);
     }
 
     .seccion-demi-titu {
-        padding-left: 80px;
+        padding-left: clamp(2.5rem, 4.1667vw, 5rem);
     }
 
     /* NEW EPISODES */
@@ -1846,14 +1847,14 @@ footer .container-secciones {
     .music-slide {
         flex-direction: row;
         flex: 1 1 auto;
-        gap: 30px;
+        gap: clamp(16px, 1.5625vw, 30px);
         scroll-snap-align: none;
     }
 
     .container-music-videos {
-        gap: 30px;
+        gap: clamp(16px, 1.5625vw, 30px);
         padding-left: 5rem;
-        scroll-padding-left: 5rem;
+        scroll-padding-left: clamp(2.5rem, 4.1667vw, 5rem);
     }
 
     .music-slide,
