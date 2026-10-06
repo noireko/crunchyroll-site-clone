@@ -2,6 +2,12 @@ const hamburguesa = document.getElementById("hamb");
 const nav = document.getElementById("nav");
 const visCel = document.getElementById("vis-cel");
 
+// Evita el error "Unsafe attempt to load URL" al abrir con file://
+// (los enlaces href="#" dejan de navegar)
+document.querySelectorAll('a[href="#"]').forEach(a => {
+  a.addEventListener('click', e => e.preventDefault());
+});
+
 hamburguesa.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
